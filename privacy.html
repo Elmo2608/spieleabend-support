@@ -1,78 +1,110 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Spieleabend - Scorekeeper – Datenschutz</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Spieleabend - Scorekeeper – Datenschutz</title>
+<link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="container">
-    <header class="nav">
-      <div class="brand">
-        <div class="logo" aria-hidden="true"><span>🔒</span></div>
-        <div>Spieleabend - Scorekeeper</div>
-      </div>
-      <nav class="navlinks">
-        <a class="pill" href="index.html">Support</a>
-        <a class="pill" href="privacy.html">Datenschutz</a>
-      </nav>
-    </header>
 
-    <section class="hero">
-      <h1>Datenschutzerklärung</h1>
-      <p class="subtitle">
-        Kurzfassung: <strong>Keine Accounts, keine Cloud, kein Tracking</strong>. Alles bleibt auf deinem Gerät.
-      </p>
+<div class="container">
 
-      <div class="grid">
-        <div class="card">
-          <h2>Welche Daten werden erhoben?</h2>
-          <p>
-            Die App <strong>erhebt keine personenbezogenen Daten</strong> und sendet keine Informationen an externe Server.
-            Es werden <strong>keine Analyse-/Tracking-Dienste</strong> verwendet.
-          </p>
-          <ul>
-            <li>Keine Registrierung / kein Login</li>
-            <li>Keine Werbe-IDs</li>
-            <li>Keine Analytics</li>
-            <li>Keine Datenweitergabe</li>
-          </ul>
-        </div>
+<header class="nav">
+<div class="brand">
+<div class="logo" aria-hidden="true"><span>🔒</span></div>
+<div>Spieleabend - Scorekeeper</div>
+</div>
 
-        <div class="card">
-          <h2>Speicherung & Verarbeitung</h2>
-          <p>
-            Spielabende, Spieler, Runden und Statistiken werden <strong>lokal auf deinem Gerät</strong> gespeichert.
-            Eine Übertragung an mich oder Dritte findet nicht statt.
-          </p>
+<nav class="navlinks">
+<a class="pill" href="index.html">Support</a>
+<a class="pill" href="privacy.html">Datenschutz</a>
+<a class="pill" href="impressum.html">Impressum</a>
+</nav>
+</header>
 
-          <hr />
+<section class="hero">
 
-          <h2>Kontakt</h2>
-          <p>
-            Wenn du Fragen zum Datenschutz hast, kannst du mich jederzeit kontaktieren:
-            <br />
-            <strong>Email:</strong> <a href="mailto:spieleabendapp@mail.de">spieleabendapp@mail.de</a>
-          </p>
+<h1>Datenschutzerklärung</h1>
 
-          <p class="small">
-            Stand: <span id="d"></span>
-          </p>
-        </div>
-      </div>
-    </section>
+<p class="subtitle">
+Kurzfassung: <strong>Keine Accounts, keine Cloud, kein Tracking</strong>. Alles bleibt auf deinem Gerät.
+</p>
 
-    <footer class="footer">
-      <div>© <span id="y"></span> Spieleabend Pro</div>
-      <div><a href="index.html">Support</a></div>
-    </footer>
-  </div>
+<div class="grid">
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-    const dt = new Date();
-    document.getElementById("d").textContent = dt.toLocaleDateString("de-DE");
-  </script>
+<div class="card">
+
+<h2>Welche Daten werden erhoben?</h2>
+
+<p>
+Die App <strong>erhebt keine personenbezogenen Daten</strong> und sendet keine Informationen an externe Server.
+Es werden <strong>keine Analyse- oder Tracking-Dienste</strong> verwendet.
+</p>
+
+<ul>
+<li>Keine Registrierung oder Login</li>
+<li>Keine Werbe-IDs</li>
+<li>Keine Analytics</li>
+<li>Keine Datenweitergabe</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Speicherung & Verarbeitung</h2>
+
+<p>
+Spielabende, Spieler, Runden und Statistiken werden
+<strong>ausschließlich lokal auf deinem Gerät</strong> gespeichert.
+Eine Übertragung an mich oder Dritte findet nicht statt.
+</p>
+
+<hr>
+
+<h2>Kontakt</h2>
+
+<p>
+Bei Fragen zum Datenschutz erreichst du mich unter:
+<br>
+<strong>Email:</strong>
+<a href="mailto:spieleabendapp@mail.de">spieleabendapp@mail.de</a>
+</p>
+
+<p class="small">
+Stand: <span id="d"></span>
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<div>© <span id="y"></span> Spieleabend - Scorekeeper</div>
+
+<div>
+<a href="index.html">Support</a> •
+<a href="privacy.html">Datenschutz</a> •
+<a href="impressum.html">Impressum</a>
+</div>
+
+</footer>
+
+</div>
+
+<script>
+
+document.getElementById("y").textContent = new Date().getFullYear();
+
+const dt = new Date();
+document.getElementById("d").textContent = dt.toLocaleDateString("de-DE");
+
+</script>
+
 </body>
 </html>
